@@ -1,0 +1,24 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Upload Documents";
+}
+<h1>@ViewData["Title"]</h1>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        <span>Select files</span>
+        <input type="file" name="postedFiles" multiple />
+        <input type="submit" value="Upload" asp-page-handler="Upload" />
+        <br />
+        <span style="color:green">@Html.Raw(Model.Message)</span>
+    </form>
+</body>
+</html>
