@@ -1,0 +1,35 @@
+﻿@page
+@model BotAssistUI.Pages.ChatWindowModel
+@{
+
+}
+<form method="post" enctype="multipart/form-data">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="row">
+                    <button class="btn btn-primary">FAQ's</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary" onclick="window.location.href=" www.google.com">Create Ticket</button>
+                </div>
+            </div>
+            <div class="col-10">
+                <div>@DateTime.UtcNow</div>
+                <div class="messages">
+                    <div class="response">
+                        kshbdvbSdcASDcoAbjaSKbkABkdaBdkawfbkafbkefabaskefbadskkghhhhhgyuglkgggggggggggggggggggg
+                    </div>
+
+                    <div class="question">
+                        yavefjhaesbjcfbAJShcfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+                    </div>
+                </div>
+                <div class="textMessage">
+                    <input class="input" type="text" asp-for="@Model.Message" value="@Model.Message" />
+                    <button class="button" type="submit">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
